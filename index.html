@@ -18,7 +18,7 @@
 		const header = document.querySelector("header");
 		const section = document.querySelector("section");
 		/* STEP 3: Store the URL of a JSON file in a variable */
-		let requestURL = "https://smccrindle.github.io/comp1073module10/js/i-scream.json";
+		let requestURL = "https://csc530.github.io/lesson/js/i-scream.json";
 		console.log(requestURL);
 		/* STEP 4: Create a new XHR object */
 		let request = new XMLHttpRequest();
@@ -43,7 +43,6 @@
 		}
 		/* STEP 10a: Assemble the showTopFlavors() function */
 		function showTopFlavours(jsonObj) {
-			console.log("beep");
 			// STEP 10b: Bind the JSON topFlavors object to a var
 			let topFlavours = jsonObj.topFlavors;
 			// STEP 10c: Loop through the topFlavors object
