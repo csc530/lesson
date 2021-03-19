@@ -46,7 +46,7 @@
 			// STEP 10b: Bind the JSON topFlavors object to a var
 			let topFlavours = jsonObj.topFlavors;
 			// STEP 10c: Loop through the topFlavors object
-			for(let i = 0; i < topFlavours; i++) {
+			for(let i = 0; i < topFlavours.length; i++) {
 				// STEP 10d: build HTML elements for the content
 				const article = document.createElement("article");
 				const h2 = document.createElement("h2");
@@ -76,7 +76,6 @@
 				article.appendChild(list);
 				// STEP 10h: Append each complete ARTICLE element to the SECTION element
 				section.appendChild(article);
-				console.log(article + h2 + img + p1 + p2 + list);
 			}
 		}
 		/* STEP 11: Change the URL in step 3 to point to the JSON file in the local /js folder */
